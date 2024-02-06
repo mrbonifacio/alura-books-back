@@ -36,7 +36,7 @@ function getLivro(req, res) {
 function postLivro(req, res) {
   try {
     const livroNovo = req.body;
-    if (req.bodt.nome) {
+    if (req.body.nome) {
       insereLivro(livroNovo);
       res.status(201);
       res.send("Livro inserido com sucesso");
